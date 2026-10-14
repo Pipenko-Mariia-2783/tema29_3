@@ -145,3 +145,22 @@ Overcoat& Overcoat::operator++(int)
     ++(*this);
     return tmp;
 }
+
+ostream& operator<<(ostream& out, const Overcoat& obj)
+{
+    out << "Name: " << obj.name << endl;
+    out << "Type: " << obj.type << endl;
+    out << "Size: " << obj.size << endl;
+    out << "Price: " << obj.price << endl;
+    return out;
+}
+
+istream& operator>>(istream& in, Overcoat& obj)
+{
+    in >> obj.name;
+    in >> obj.type;
+    in >> obj.size;
+    in >> obj.price;
+    return in;
+}
+    

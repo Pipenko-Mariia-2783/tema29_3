@@ -36,5 +36,8 @@ public:
 	Overcoat& operator ++ ();
 	Overcoat& operator ++ (int);
 
+
+	friend ostream& operator<<(ostream& out, const Overcoat& obj);
+	friend istream& operator>>(istream& in, Overcoat& obj);
 };
 
