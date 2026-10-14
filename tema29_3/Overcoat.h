@@ -21,7 +21,7 @@ public:
 
 	void setName(string name);
 	void setType(string type);
-	void seySize(int size);
-
+	void setSize(int size);
+	void setPrice(float price);
 };
 
