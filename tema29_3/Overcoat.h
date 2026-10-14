@@ -31,5 +31,10 @@ public:
 	bool operator >=(const Overcoat& obj)const&;
 	bool operator <=(const Overcoat& obj)const&;
 
+	Overcoat& operator -- ();
+	Overcoat& operator -- (int);
+	Overcoat& operator ++ ();
+	Overcoat& operator ++ (int);
+
 };
 

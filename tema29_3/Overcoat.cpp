@@ -115,3 +115,33 @@ bool Overcoat::operator<=(const Overcoat& obj) const&
         return false;
     }
 }
+
+Overcoat& Overcoat::operator--()
+{
+    // TODO: insert return statement here
+    size = size - 1;
+    return *this;
+}
+
+Overcoat& Overcoat::operator--(int)
+{
+    // TODO: insert return statement here
+    Overcoat tmp = *this;
+    --(*this);
+    return tmp;
+}
+
+Overcoat& Overcoat::operator++()
+{
+    // TODO: insert return statement here
+    size = size + 1;
+    return *this;
+}
+
+Overcoat& Overcoat::operator++(int)
+{
+    // TODO: insert return statement here
+    Overcoat tmp = *this;
+    ++(*this);
+    return tmp;
+}
