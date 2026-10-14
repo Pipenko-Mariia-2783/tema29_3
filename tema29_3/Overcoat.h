@@ -23,5 +23,13 @@ public:
 	void setType(string type);
 	void setSize(int size);
 	void setPrice(float price);
+
+	bool operator ==(const Overcoat& obj)const&;
+	bool operator !=(const Overcoat& obj)const&;
+	bool operator >(const Overcoat& obj)const&;
+	bool operator <(const Overcoat& obj)const&;
+	bool operator >=(const Overcoat& obj)const&;
+	bool operator <=(const Overcoat& obj)const&;
+
 };
 

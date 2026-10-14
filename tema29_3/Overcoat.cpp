@@ -55,3 +55,63 @@ void Overcoat::setPrice(float price)
 {
     this->price = price;
 }
+
+bool Overcoat::operator==(const Overcoat& obj) const&
+{
+    if (this->type == obj.type) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Overcoat::operator!=(const Overcoat& obj) const&
+{
+    if (this->type != obj.type) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Overcoat::operator>(const Overcoat& obj) const&
+{
+    if (this->price > obj.price) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Overcoat::operator<(const Overcoat& obj) const&
+{
+    if (this->price < obj.price) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Overcoat::operator>=(const Overcoat& obj) const&
+{
+    if (this->price >= obj.price) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+bool Overcoat::operator<=(const Overcoat& obj) const&
+{
+    if (this->price <= obj.price) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
